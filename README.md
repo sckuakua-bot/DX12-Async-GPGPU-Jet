@@ -31,7 +31,7 @@ CPU : I5 12400F
 - `API/SuperCompute.hlsl`: 最佳化的 GPGPU 計算核心。
 - 
 ##已知問題
-* 尚未支持動態調整VRAM
+* 尚未支持動態調整VRAM(後面版本會做新增)
 * 只支援Windows(暫定沒有要擴展系統)
 
 ## 其他
