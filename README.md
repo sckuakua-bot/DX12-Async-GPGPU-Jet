@@ -5,7 +5,7 @@
 ## 核心技術亮點
 * **異步管線重疊 (Async Overlap)**：實作 Compute 與 Copy 引擎並行，減少 GPU 空轉時間。
 * **資源屏障優化 (Resource Barrier)**：精確控制 UAV Barrier，解決了大規模數據同步中的一致性風險（Stale Data Prevention）。
-* **大規模數據壓測**：針對 5.6 GB 數據量進行循環計算驗證，確保在極端負載下的穩定性。
+* **大規模數據壓測**：針對 256 MB 數據量進行循環計算驗證，確保在極端負載下的穩定性。
 
 ## 🚀 性能實測 (Benchmark)
 測試環境：
