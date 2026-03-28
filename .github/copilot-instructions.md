@@ -1,0 +1,4 @@
+# Copilot Instructions
+
+## 專案指導方針
+- User is working on a D3D12 GPGPU compute application with dual-queue architecture (copy + compute). They've encountered a complex synchronization issue where GPU compute results don't match CPU reference results. The root cause turned out to be improper parameter passing from C++ root signature (32BIT_CONSTANTS inline constants) to HLSL shader (cbuffer). These are incompatible bindings - inline root constants cannot be read via cbuffer in HLSL. The fix requires either: 1) Using a proper Constant Buffer View (CBV) with a separate constant buffer resource, or 2) Using descriptor tables instead of inline root constants.
