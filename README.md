@@ -1,4 +1,4 @@
-# DX12-Async-GPGPU-Jet 🚀
+# Async-GPGPU-Jet 🚀
 
 這是一個基於 **DirectX 12** 的高效能異步計算（Async Compute）實驗專案。透過獨立的 **Compute Queue** 與 **Copy Queue** 並行運作，在處理大規模數據時達成顯著的性能提升。
 
