@@ -15,15 +15,15 @@
 
 | 數據規模 | 迭代次數 (Iterations) | 加速比 (vs CPU/Sync) | 數據校驗 (Validation) |
 | :--- | :--- | :--- | :--- |
-| 256 MB | 64 | 43.6x | **PASS** |
-| 256 MB | 256 | **161.3x** | **PASS** |
-| 256 MB | 1024 | **161.3x** | **PASS** |
+| 256 MB | 64 | **30.2x** | **PASS** |
+| 256 MB | 256 | **108.4x** | **PASS** |
+| 256 MB | 1024 | **296.7xx** | **PASS** |
 
 > **技術觀察**：隨著迭代次數增加，GPU 的吞吐量優勢（Throughput）呈線性爆發，成功抵銷了 PCIe 頻寬帶來的初始延遲。
 
 ## 🛠️ 開發環境
 - **Language**: C++ 23
-- **Graphics API**: Vulkan
+- **Graphics API**: Vulkan 1.4.341.1
 - **Shader**: HLSL (CS_6_0)
 - **IDE**: Visual Studio 2026 (.slnx ready)
 
