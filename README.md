@@ -1,4 +1,4 @@
-# Vulkan-Async-GPGPU-Jet Demo V4🚀
+# Vulkan-Async-GPGPU-Jet V1🚀
 
 這是一個基於 **Vulkan** 的高效能異步計算（Async Compute）實驗專案。透過獨立的 **Compute Queue** 與 **Copy Queue** 並行運作，在處理大規模數據時達成顯著的性能提升。
 
@@ -15,9 +15,8 @@
 
 | 數據規模 | 迭代次數 (Iterations) | 加速比 (vs CPU/Sync) | 數據校驗 (Validation) |
 | :--- | :--- | :--- | :--- |
-| 256 MB | 64 | **30.2x** | **PASS** |
-| 256 MB | 256 | **108.4x** | **PASS** |
-| 256 MB | 1024 | **296.7xx** | **PASS** |
+| 300 MB | 64 | **41.86x** | **PASS** |
+| 300 MB | 512 | **474.79x** | **PASS** |
 
 > **技術觀察**：隨著迭代次數增加，GPU 的吞吐量優勢（Throughput）呈線性爆發，成功抵銷了 PCIe 頻寬帶來的初始延遲。
 
@@ -44,4 +43,4 @@
 * Demo版本是AI生成的雛形日後會針對此版本錯修改和新增
 
 
-## 2026 4/5提交
+## 2026 4/12提交
